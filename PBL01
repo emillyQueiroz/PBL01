@@ -1,0 +1,20 @@
+
+tamanhoLista = int (input("Digite um tamanho para lista: "))
+
+print("----------Resultado------------")
+
+lista = []
+for i in range(tamanhoLista):
+
+    qtdNumeros = int (input("Informe os números: "))
+    lista.append(qtdNumeros)
+
+
+for i in lista:
+
+    if i %3 ==0:
+        print(f"{i} - número múltiplo de três")
+    elif i %2==0:
+        print(f"{i} - número par")
+    elif i % 2 == 1:
+        print(f"{i} - número ímpar")
